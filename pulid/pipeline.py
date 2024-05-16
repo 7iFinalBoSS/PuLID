@@ -31,10 +31,10 @@ else:
 
 
 class PuLIDPipeline:
-    def __init__(self, *args, **kwargs):
+    def __init__(self, sdxl_base_repo, *args, **kwargs):
         super().__init__()
         self.device = 'cuda'
-        sdxl_base_repo = 'stabilityai/stable-diffusion-xl-base-1.0'
+        sdxl_base_repo = sdxl_base_repo
         sdxl_lightning_repo = 'ByteDance/SDXL-Lightning'
         self.sdxl_base_repo = sdxl_base_repo
 
